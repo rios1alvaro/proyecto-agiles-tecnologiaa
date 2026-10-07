@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #030712;
+  color: #f8fafc;
+}
+
+canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background: #090d16;
+}
+
+.ui-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(3, 7, 18, 0.92);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.menu-card {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 12px;
+  border: 2px solid #38bdf8;
+  text-align: center;
+  max-width: 480px;
+  width: 90%;
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.3);
+}
+
+.menu-card h1 {
+  color: #fbbf24;
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.credits {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: #38bdf8;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #475569;
+  background: #0f172a;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.hint-text {
+  display: block;
+  color: #fb7185;
+  font-size: 0.75rem;
+  margin-top: 4px;
+}
+
+.controls-hint {
+  background: #0f172a;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+  color: #cbd5e1;
+  line-height: 1.4;
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.1s, background-color 0.2s;
+}
+
+.btn-primary {
+  background: #0284c7;
+  color: white;
+  width: 100%;
+}
+
+.btn-primary:hover {
+  background: #0369a1;
+  transform: scale(1.02);
+}
+
+.btn-small {
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  background: #334155;
+  color: white;
+  margin-left: 6px;
+}
+
+.hud-bar {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.hud-group span {
+  background: rgba(15, 23, 42, 0.85);
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 1px solid #334155;
+  margin-right: 10px;
+  font-size: 0.9rem;
+}
+
+.hud-buttons button {
+  pointer-events: auto;
+}

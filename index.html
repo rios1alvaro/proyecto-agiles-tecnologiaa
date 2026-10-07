@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comiendo en el Espacio Gordovihc</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ui-overlay" id="menuOverlay">
+    <div class="menu-card">
+      <h1>Comiendo en el Espacio Gordovihc</h1>
+      <p class="credits">Desarrollado por <strong>Alvaro</strong>, <strong>Paulo</strong></p>
+      
+      <div class="input-group">
+        <label for="playerName">Nombre del Piloto / Héroe:</label>
+        <input type="text" id="playerName" placeholder="Escribe tu nombre..." value="Héroe">
+      </div>
+
+      <div class="input-group">
+        <label for="playerWeight">Ingresa tu Peso (kg):</label>
+        <input type="number" id="playerWeight" min="40" max="200" value="70">
+        <small class="hint-text">* Debes ingresar tu peso para calcular el tamaño y mocos de Gordovihc.</small>
+      </div>
+
+      <div class="controls-hint">
+        <p><strong>A / D</strong> o <strong>Flechas</strong>: Moverse | <strong>W / Flecha Arriba</strong>: Saltar</p>
+        <p><strong>P</strong>: Disparar Lechugas | <strong>R</strong>: Recargar Cargador</p>
+        <p><strong>ESPACIO</strong>: Pausar / Reanudar</p>
+      </div>
+
+      <button id="btnStart" class="btn btn-primary">Iniciar Misión Espacial</button>
+    </div>
+  </div>
+
+  <div class="hud-bar">
+    <div class="hud-group">
+      <span id="displayPlayerName">Piloto: -</span>
+      <span id="displayWeight">Peso: 70kg</span>
+      <span id="displayLevel">Nivel: 1</span>
+      <span id="displayAmmo">Balas: 12 / 12</span>
+    </div>
+    <div class="hud-buttons">
+      <button id="btnChangeName" class="btn btn-small">Menú / Opciones</button>
+      <button id="btnPause" class="btn btn-small">Pausar (ESPACIO)</button>
+    </div>
+  </div>
+
+  <canvas id="gameCanvas"></canvas>
+
+  <script src="app.js"></script>
+</body>
+</html>
